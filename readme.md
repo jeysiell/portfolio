@@ -1,83 +1,174 @@
-# Nome do Projeto
 
-Breve descrição: API REST em Node.js que fornece [breve descrição da funcionalidade].
+# 💼 Portfólio — *Jeysiell Felipe Santos Lima*
 
-## Sumário
-- Sobre
-- Requisitos
-- Como começar
-- Ambiente
-- Como executar
-- Scripts
-- API (exemplos)
-- Estrutura do projeto
-- Testes
-- Contribuição
-- Licença
+Bem-vindo ao meu portfólio!  
+Aqui você encontra minhas **formações**, **habilidades**, **projetos**, além de informações sobre como entrar em **contato** comigo.
 
-## Sobre
-API simples e leve em Node.js construída com Express (ou o framework de sua escolha). Implementa endpoints REST em JSON com configuração baseada em ambiente.
+Este repositório tem como objetivo apresentar meu trabalho como desenvolvedor e facilitar o acesso rápido ao meu código, minhas experiências e à minha trajetória na área de tecnologia.
 
-## Requisitos
-- Node.js >= 14
-- npm ou yarn
-- (Opcional) Docker
+---
 
-## Como começar
-1. Clone o repositório
-    ```
-    git clone <repo-url>
-    cd <repo-folder>
-    ```
-2. Instale as dependências
-    ```
-    npm install
-    ```
-3. Crie `.env` a partir de `.env.example` e preencha os valores.
+## 📌 Sumário
+- Sobre mim
+- Formações
+- Habilidades
+- Projetos em destaque
+- Contato
+- Exemplo de projeto (modelo técnico)
+  - Requisitos
+  - Como começar
+  - Variáveis de ambiente
+  - Como executar
+  - Scripts
+  - API
+  - Estrutura do projeto
+  - Testes
+  - Contribuição
+  - Licença
 
-## Variáveis de ambiente (exemplo)
+---
+
+## 👨‍💻 Sobre mim
+Sou um desenvolvedor focado em criar soluções eficientes, escaláveis e bem estruturadas. Tenho experiência com **JavaScript/Node.js**, APIs REST e boas práticas de desenvolvimento.
+
+Meu objetivo é continuar evoluindo na área de desenvolvimento backend, criando sistemas robustos, seguros e de fácil manutenção.
+
+---
+
+## 🎓 Formações
+- **Tecnologia da Informação — Em andamento**
+- **Cursos complementares**
+  - Lógica de Programação  
+  - Desenvolvimento Web com JavaScript  
+  - APIs REST com Node.js  
+  - Git e GitHub  
+
+---
+
+## 🛠️ Habilidades
+
+### **Linguagens**
+- JavaScript (ES6+)
+- Node.js
+- SQL / NoSQL
+
+### **Frameworks e Tecnologias**
+- Express.js
+- MongoDB / Mongoose
+- JWT
+- Docker
+- Postman / Insomnia
+
+### **Ferramentas**
+- Git & GitHub
+- VS Code
+- Linux / WSL
+
+---
+
+## 🚀 Projetos em destaque
+
+### 🔹 **API REST Node.js — Sistema de Usuários**
+API completa com autenticação JWT, CRUD de usuários, validações e boas práticas de arquitetura.
+👉 *[Link do repositório](#)*
+
+### 🔹 **Projeto Frontend — Página Responsiva**  
+Landing page responsiva construída com HTML, CSS e JS.
+👉 *[Link do repositório](#)*
+
+### 🔹 **Microprojeto — Scripts utilitários em JavaScript**  
+Coleção de scripts úteis para automações simples.
+👉 *[Link do repositório](#)*
+
+---
+
+## 📬 Contato
+- **Email:** seuemail@exemplo.com  
+- **LinkedIn:** https://linkedin.com/in/seuperfil  
+- **GitHub:** https://github.com/seuusuario
+
+---
+
+# 🧩 Exemplo de projeto (modelo técnico)
+
+## 📦 Requisitos
+- Node.js >= 14  
+- npm ou yarn  
+- (Opcional) Docker  
+
+---
+
+## ▶️ Como começar
+```bash
+git clone <repo-url>
+cd <repo-folder>
+npm install
 ```
+
+Crie um arquivo `.env` baseado no `.env.example`.
+
+---
+
+## 🔧 Variáveis de ambiente
+```env
 PORT=3000
 NODE_ENV=development
 DATABASE_URL=mongodb://localhost:27017/dbname
 JWT_SECRET=your_jwt_secret
 ```
 
-## Como executar
-- Iniciar em desenvolvimento (com nodemon):
-  ```
-  npm run dev
-  ```
-- Iniciar em produção:
-  ```
-  npm start
-  ```
+---
 
-## Scripts (exemplo)
-- `npm run dev` — iniciar servidor em dev
-- `npm start` — iniciar servidor em produção
-- `npm test` — executar testes
-- `npm run lint` — verificar estilo do código
+## 🏃 Como executar
+### Desenvolvimento:
+```bash
+npm run dev
+```
 
-## API (exemplos)
-- Health check
-  - GET /health
-  - Resposta: 200 OK
-- Autenticação
-  - POST /auth/login
-  - Body: `{ "email": "...", "password": "..." }`
-  - Resposta: `{ "token": "..." }`
-- Usuários
-  - GET /users — listar usuários (autenticação requerida)
-  - GET /users/:id — obter usuário por id
-  - POST /users — criar usuário
+### Produção:
+```bash
+npm start
+```
 
-Inclua o cabeçalho de autenticação:
+---
+
+## 📜 Scripts
+- `npm run dev` — iniciar servidor em desenvolvimento  
+- `npm start` — iniciar em produção  
+- `npm test` — executar testes  
+- `npm run lint` — checagem de estilo de código  
+
+---
+
+## 📡 API — Exemplos
+### Health check
+```
+GET /health
+→ 200 OK
+```
+
+### Autenticação
+```
+POST /auth/login
+Body: { "email": "...", "password": "..." }
+Response: { "token": "..." }
+```
+
+### Usuários
+```
+GET /users
+GET /users/:id
+POST /users
+```
+
+Headers:
 ```
 Authorization: Bearer <token>
 ```
 
-## Estrutura do projeto (sugerida)
+---
+
+## 📂 Estrutura do projeto
 ```
 /src
   /controllers
@@ -89,19 +180,25 @@ Authorization: Bearer <token>
 config.js
 ```
 
-## Testes
-- Escreva testes unitários/integrados com o framework de sua preferência (Jest, Mocha).
-- Executar:
-  ```
-  npm test
-  ```
+---
 
-## Contribuição
-- Faça um fork, crie uma branch de feature e abra um pull request.
-- Siga o estilo de código e inclua testes para novas funcionalidades.
+## 🧪 Testes
+Execute:
+```bash
+npm test
+```
 
-## Licença
-Especifique uma licença (ex.: MIT) no arquivo LICENSE.
+Recomendação: Jest ou Mocha.
 
-## Observações
-Adicione CI, Dockerfile e documentação da API (Swagger/OpenAPI) conforme necessário.
+---
+
+## 🤝 Contribuição
+- Faça um fork  
+- Crie uma branch: `feature/<nome>`  
+- Envie um Pull Request  
+
+---
+
+## 📄 Licença
+Escolha uma licença (ex.: MIT) e adicione ao arquivo LICENSE.
+
