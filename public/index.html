@@ -175,18 +175,21 @@
                 <span class="h-3 w-3 rounded-full bg-amber-300"></span>
                 <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
               </div>
-              <pre
-                class="code-snippet text-xs sm:text-sm"
-              ><code>const pipeline = {
-  stack: ['Node.js', 'PostgreSQL', 'Redis'],
-  foco: ['APIs', 'Filas', 'Automacao'],
-  status: 'running'
+
+              <pre class="code-snippet text-xs sm:text-sm"><code>const stack = {
+  runtime: 'Node.js',
+  database: 'PostgreSQL',
+  cache: 'Redis',
+  queue: 'RabbitMQ'
 };
 
-async function processQueue(job) {
-  const data = await validate(job.payload);
-  await persist(data);
-  return notify(data.id);
+async function worker(job) {
+  const payload = await validate(job.data);
+
+  await repository.save(payload);
+  await events.publish('workflow.completed', payload.id);
+
+  return { ok: true };
 }</code></pre>
             </article>
 

@@ -1,30 +1,67 @@
-﻿# Portfólio Dev Moderno (Tailwind CSS)
+﻿# Portfólio Dev Backend e Automação
 
-Projeto de portfólio em página única com visual moderno, responsivo e código organizado.
+Portfólio em página única com foco em **desenvolvimento backend**, **integrações** e **automação de processos**.
 
-## Estrutura
+## Visão geral
 
-- `index.html`: Estrutura semântica da página e utilitários Tailwind.
-- `assets/css/styles.css`: Estilos customizados (identidade visual, animações e componentes).
-- `assets/js/main.js`: Interações de UI (menu mobile, header no scroll, reveal on scroll).
-- `assets/img/`: Pasta reservada para imagens e mídia.
+- Layout moderno e responsivo (desktop e mobile)
+- Tailwind CSS via CDN
+- Código limpo com separação de responsabilidades
+- Interações leves em JavaScript (menu mobile, animações de entrada e header dinâmico)
 
-## Como usar
+## Estrutura do projeto
 
-1. Abra o arquivo `index.html` no navegador.
-2. Edite os textos, links e projetos com seus dados.
-3. Adicione imagens em `assets/img` e ajuste os cards conforme necessário.
+- `index.html`: entrada principal do site
+- `public/index.html`: versão espelhada para cenários com pasta `public`
+- `assets/css/styles.css`: estilos customizados
+- `assets/js/main.js`: comportamentos da interface
+- `assets/img/`: imagens e mídias
 
-## Seções incluídas
+## Como executar localmente
 
-- Hero
-- Sobre
-- Stack
-- Projetos
-- Contato
+Como o projeto usa módulo JavaScript (`type="module"`), rode com um servidor local:
 
-## Melhorias sugeridas
+```bash
+python -m http.server 5500
+```
 
-- Conectar formulário de contato a serviço de envio.
-- Publicar em Vercel, Netlify ou GitHub Pages.
-- Integrar CMS/headless para atualizar projetos sem mexer no HTML.
+Acesse:
+
+- `http://localhost:5500/`
+- ou `http://localhost:5500/public/`
+
+## Personalização rápida
+
+Edite diretamente em `index.html`:
+
+- Textos de apresentação (Hero e Sobre)
+- Cards de projetos
+- Stack técnica
+- Links de contato (`mailto`, LinkedIn e GitHub)
+
+Ajustes visuais em `assets/css/styles.css`:
+
+- Cores, gradientes e tipografia
+- Espaçamentos e componentes (cards, chips, botões)
+- Animações e responsividade
+
+## Stack utilizada
+
+- HTML5
+- Tailwind CSS (CDN)
+- CSS3
+- JavaScript (ES Modules)
+
+## Deploy
+
+Pode ser publicado em qualquer hospedagem estática:
+
+- GitHub Pages
+- Netlify
+- Vercel
+
+## Próximas melhorias sugeridas
+
+- Adicionar formulário de contato com envio real
+- Integrar analytics
+- Criar página de case detalhada para cada projeto
