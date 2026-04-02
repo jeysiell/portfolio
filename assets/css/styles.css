@@ -277,3 +277,24 @@ body {
     transition: none;
   }
 }
+
+
+
+.tech-tag{
+  font-size:12px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#1e293b;
+  color:#cbd5f5;
+  border:1px solid #334155;
+}
+
+
+.project-type{
+font-size:11px;
+letter-spacing:0.05em;
+text-transform:uppercase;
+color:#94a3b8;
+margin-bottom:6px;
+display:block;
+}

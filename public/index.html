@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -21,47 +21,63 @@
           extend: {
             colors: {
               brand: {
-                50: '#f5f6ff',
-                100: '#e6e9ff',
-                200: '#c7ceff',
-                300: '#9ea9ff',
-                400: '#7482ff',
-                500: '#4c5dff',
-                600: '#3a47e0',
-                700: '#2d37b8',
-                800: '#252d8f',
-                900: '#1f266f'
+                50: "#f5f6ff",
+                100: "#e6e9ff",
+                200: "#c7ceff",
+                300: "#9ea9ff",
+                400: "#7482ff",
+                500: "#4c5dff",
+                600: "#3a47e0",
+                700: "#2d37b8",
+                800: "#252d8f",
+                900: "#1f266f",
               },
-              ink: '#0f172a',
-              accent: '#21c7a8',
-              paper: '#f8fafc'
+              ink: "#0f172a",
+              accent: "#21c7a8",
+              paper: "#f8fafc",
             },
             fontFamily: {
-              display: ['Archivo', 'sans-serif'],
-              body: ['Space Grotesk', 'sans-serif']
+              display: ["Archivo", "sans-serif"],
+              body: ["Space Grotesk", "sans-serif"],
             },
             boxShadow: {
-              soft: '0 20px 45px -25px rgba(15, 23, 42, 0.35)'
-            }
-          }
-        }
+              soft: "0 20px 45px -25px rgba(15, 23, 42, 0.35)",
+            },
+          },
+        },
       };
     </script>
 
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <title>Jeysiell Lima | Portfólio Dev</title>
   </head>
-  <body class="bg-slate-950 font-body text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+  <body
+    class="bg-slate-950 font-body text-slate-100 antialiased selection:bg-brand-500 selection:text-white"
+  >
     <div class="site-grid fixed inset-0 -z-10"></div>
     <div class="orb orb-brand -left-40 top-16 -z-10"></div>
     <div class="orb orb-accent -right-20 bottom-16 -z-10"></div>
 
-    <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+    >
       <div class="mx-auto max-w-6xl px-6 py-4 lg:px-8">
-        <div class="header-shell flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 backdrop-blur-lg transition-all duration-300 sm:px-6">
-          <a href="#home" class="font-display text-lg font-bold tracking-tight text-white">JL<span class="text-accent">.</span>dev</a>
+        <div
+          class="header-shell flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 backdrop-blur-lg transition-all duration-300 sm:px-6"
+        >
+          <a
+            href="#home"
+            class="font-display text-lg font-bold tracking-tight text-white"
+            >JL<span class="text-accent">.</span>dev</a
+          >
 
-          <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" class="inline-flex items-center justify-center rounded-lg border border-white/15 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300 hover:text-white lg:hidden">
+          <button
+            id="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            class="inline-flex items-center justify-center rounded-lg border border-white/15 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300 hover:text-white lg:hidden"
+          >
             Menu
           </button>
 
@@ -70,11 +86,18 @@
             <a href="#stack" class="nav-link">Stack</a>
             <a href="#projetos" class="nav-link">Projetos</a>
             <a href="#contato" class="nav-link">Contato</a>
-            <a href="#contato" class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white transition hover:bg-brand-400">Vamos conversar</a>
+            <a
+              href="#contato"
+              class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white transition hover:bg-brand-400"
+              >Vamos conversar</a
+            >
           </nav>
         </div>
 
-        <nav id="mobile-menu" class="mt-3 hidden rounded-2xl border border-white/10 bg-slate-900/95 p-4 text-sm text-slate-200 backdrop-blur lg:hidden">
+        <nav
+          id="mobile-menu"
+          class="mt-3 hidden rounded-2xl border border-white/10 bg-slate-900/95 p-4 text-sm text-slate-200 backdrop-blur lg:hidden"
+        >
           <a href="#sobre" class="mobile-link">Sobre</a>
           <a href="#stack" class="mobile-link">Stack</a>
           <a href="#projetos" class="mobile-link">Projetos</a>
@@ -87,46 +110,74 @@
       <section class="mx-auto max-w-6xl px-6 pb-16 pt-36 lg:px-8 lg:pt-40">
         <div class="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <div data-reveal>
-            <span class="inline-flex items-center rounded-full border border-brand-300/40 bg-brand-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.14em] text-brand-200">
-              Disponível para backend e automação
+            <span
+              class="inline-flex items-center rounded-full border border-brand-300/40 bg-brand-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.14em] text-brand-200"
+            >
+              Disponível para projetos de Backend e Automação
             </span>
-            <h1 class="mt-6 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Construo backends robustos e
-              <span class="text-gradient">automações que economizam tempo real</span>
+            <h1
+              class="mt-6 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              Construo backends
+              <span class="text-gradient">
+                e automações que eliminam tarefas manuais e escalam
+                processos.</span
+              >
             </h1>
             <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
-              Sou Jeysiell Lima, desenvolvedor focado em backend, integrações e automação de processos. Projeto APIs confiáveis, filas e jobs assíncronos para sistemas que precisam escalar com previsibilidade.
+              Sou Jeysiell Lima, desenvolvedor focado em backend, integrações e
+              automação de processos. Desenvolvo APIs robustas, filas de
+              processamento e jobs assíncronos para sistemas que precisam
+              escalar com segurança e previsibilidade.
             </p>
 
             <div class="mt-8 flex flex-wrap items-center gap-4">
-              <a href="#projetos" class="rounded-2xl bg-accent px-6 py-3 text-sm font-semibold text-slate-900 shadow-soft transition hover:-translate-y-0.5 hover:bg-emerald-300">Ver projetos</a>
-              <a href="#contato" class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5">Automatizar processo</a>
+              <a
+                href="#projetos"
+                class="rounded-2xl bg-accent px-6 py-3 text-sm font-semibold text-slate-900 shadow-soft transition hover:-translate-y-0.5 hover:bg-emerald-300"
+                >Ver projetos</a
+              >
+              <a
+                href="#contato"
+                class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5"
+                >Automatizar processo</a
+              >
             </div>
 
             <div class="mt-10 grid gap-4 sm:grid-cols-3">
               <article class="stat-card" data-reveal>
-                <p class="text-2xl font-bold text-white">+40</p>
-                <p class="text-sm text-slate-300">Automações implantadas</p>
+                <p class="text-2xl font-bold text-white">+10</p>
+                <p class="text-sm text-slate-300">
+                  Sistemas e automações desenvolvidos
+                </p>
               </article>
               <article class="stat-card" data-reveal>
                 <p class="text-2xl font-bold text-white">99.9%</p>
-                <p class="text-sm text-slate-300">Disponibilidade em produção</p>
+                <p class="text-sm text-slate-300">
+                  Uptime e estabilidade em produção
+                </p>
               </article>
               <article class="stat-card" data-reveal>
                 <p class="text-2xl font-bold text-white">-70%</p>
-                <p class="text-sm text-slate-300">Tempo operacional manual</p>
+                <p class="text-sm text-slate-300">
+                  Redução de tarefas manuais com automação
+                </p>
               </article>
             </div>
           </div>
 
           <div class="space-y-5" data-reveal>
-            <article class="glass-card overflow-hidden rounded-3xl border border-white/10 p-5 shadow-soft">
+            <article
+              class="glass-card overflow-hidden rounded-3xl border border-white/10 p-5 shadow-soft"
+            >
               <div class="mb-4 flex items-center gap-2">
                 <span class="h-3 w-3 rounded-full bg-rose-400"></span>
                 <span class="h-3 w-3 rounded-full bg-amber-300"></span>
                 <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
               </div>
-              <pre class="code-snippet text-xs sm:text-sm"><code>const pipeline = {
+              <pre
+                class="code-snippet text-xs sm:text-sm"
+              ><code>const pipeline = {
   stack: ['Node.js', 'PostgreSQL', 'Redis'],
   foco: ['APIs', 'Filas', 'Automacao'],
   status: 'running'
@@ -140,7 +191,9 @@ async function processQueue(job) {
             </article>
 
             <article class="glass-card rounded-3xl border border-white/10 p-6">
-              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Especialidades</p>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                Especialidades
+              </p>
               <div class="mt-4 flex flex-wrap gap-3 text-sm">
                 <span class="chip">Arquitetura de APIs</span>
                 <span class="chip">Filas e Workers</span>
@@ -158,12 +211,18 @@ async function processQueue(job) {
         <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <article class="panel" data-reveal>
             <p class="section-label">Sobre</p>
-            <h2 class="section-title">Backend confiável e automação orientada a eficiência</h2>
+            <h2 class="section-title">
+              Backend confiável e automação orientada à eficiência.
+            </h2>
             <p class="mt-5 text-slate-300">
-              Atuo desenhando serviços backend com regras claras, APIs bem documentadas e processos automatizados para reduzir falhas humanas e gargalos operacionais.
+              Desenvolvo serviços backend com APIs bem definidas, regras claras
+              e processos automatizados para reduzir falhas humanas e gargalos
+              operacionais.
             </p>
             <p class="mt-4 text-slate-300">
-              Cada entrega prioriza resiliência, observabilidade e manutenção simples, para que o sistema continue saudável conforme o volume cresce.
+              Priorizo resiliência, observabilidade e simplicidade de
+              manutenção, garantindo sistemas estáveis mesmo com aumento de
+              carga.
             </p>
           </article>
 
@@ -172,15 +231,24 @@ async function processQueue(job) {
             <div class="mt-6 space-y-5">
               <div class="timeline-item">
                 <p class="timeline-year">2026</p>
-                <p class="timeline-text">Automação de operações internas, integrações e orquestração de workflows críticos.</p>
+                <p class="timeline-text">
+                  Automação de operações internas, integrações entre sistemas e
+                  orquestração de workflows críticos.
+                </p>
               </div>
               <div class="timeline-item">
                 <p class="timeline-year">2024-2025</p>
-                <p class="timeline-text">Criação de APIs escaláveis, processamento assíncrono e monitoramento contínuo.</p>
+                <p class="timeline-text">
+                  Desenvolvimento de APIs escaláveis, processamento assíncrono e
+                  monitoramento contínuo de serviços.
+                </p>
               </div>
               <div class="timeline-item">
                 <p class="timeline-year">2022-2023</p>
-                <p class="timeline-text">Base em modelagem de dados, SQL, integração entre sistemas e boas práticas de arquitetura.</p>
+                <p class="timeline-text">
+                  Fundamentos em modelagem de dados, SQL, integração de sistemas
+                  e boas práticas de arquitetura backend.
+                </p>
               </div>
             </div>
           </article>
@@ -190,71 +258,160 @@ async function processQueue(job) {
       <section id="stack" class="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <article class="panel" data-reveal>
           <p class="section-label">Stack</p>
-          <h2 class="section-title">Tecnologias para APIs, integrações e automações em produção</h2>
+          <h2 class="section-title">
+            Tecnologias usadas para APIs, integrações e automações em produção
+          </h2>
+
           <div class="mt-8 grid gap-5 md:grid-cols-3">
             <div class="stack-card">
               <h3 class="stack-title">APIs e Serviços</h3>
-              <p class="stack-text">Node.js, NestJS e Fastify para serviços REST, webhooks e documentação OpenAPI.</p>
+              <p class="stack-text">
+                Node.js, NestJS e Fastify para APIs REST, webhooks e
+                documentação com OpenAPI.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Fastify</span>
+                <span class="tech-tag">REST</span>
+                <span class="tech-tag">OpenAPI</span>
+                <span class="tech-tag">Webhooks</span>
+              </div>
             </div>
+
             <div class="stack-card">
               <h3 class="stack-title">Dados e Mensageria</h3>
-              <p class="stack-text">PostgreSQL, Redis, RabbitMQ, filas, cron jobs e processamento orientado a eventos.</p>
+              <p class="stack-text">
+                PostgreSQL, Redis e RabbitMQ para persistência, filas e
+                processamento assíncrono orientado a eventos.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">RabbitMQ</span>
+                <span class="tech-tag">Queues</span>
+                <span class="tech-tag">Cron Jobs</span>
+                <span class="tech-tag">Event-Driven</span>
+              </div>
             </div>
+
             <div class="stack-card">
-              <h3 class="stack-title">DevOps e Qualidade</h3>
-              <p class="stack-text">Docker, CI/CD, logs estruturados, métricas e alertas para operação previsível.</p>
+              <h3 class="stack-title">DevOps e Observabilidade</h3>
+              <p class="stack-text">
+                Docker e CI/CD com logs estruturados, métricas e alertas para
+                operação confiável.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Logging</span>
+                <span class="tech-tag">Metrics</span>
+                <span class="tech-tag">Monitoring</span>
+                <span class="tech-tag">Alerts</span>
+              </div>
             </div>
           </div>
         </article>
       </section>
 
       <section id="projetos" class="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-        <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+        <div
+          class="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+          data-reveal
+        >
           <div>
             <p class="section-label">Projetos</p>
-            <h2 class="section-title">Seleção de trabalhos recentes</h2>
+            <h2 class="section-title">
+              Sistemas backend e automações em produção
+            </h2>
+            <p class="mt-2 text-sm text-slate-400 max-w-xl">
+              Projetos focados em automação de processos, integrações entre
+              sistemas e arquiteturas backend resilientes.
+            </p>
           </div>
-          <a href="#contato" class="text-sm font-medium text-brand-200 transition hover:text-brand-100">Precisa de algo parecido? Fale comigo.</a>
+
+          <a
+            href="#contato"
+            class="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            Precisa de algo parecido? Fale comigo
+          </a>
         </div>
 
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           <article class="project-card" data-reveal>
             <div class="project-top">
+              <span class="project-type">Backend • Billing System</span>
+
               <p class="project-title">Orquestrador de Cobranças</p>
-              <p class="project-desc">Motor backend para cobrança recorrente com filas, retentativas automáticas e webhooks de status.</p>
+
+              <p class="project-desc">
+                Motor backend para cobrança recorrente com processamento
+                assíncrono, filas de eventos, retentativas automáticas e
+                webhooks para atualização de status em sistemas externos.
+              </p>
             </div>
+
             <div class="project-tags">
               <span>Node.js</span>
               <span>RabbitMQ</span>
               <span>PostgreSQL</span>
+              <span>Queues</span>
+              <span>Webhooks</span>
             </div>
-            <a href="#" class="project-link">Ver case</a>
+
+            <a href="#" class="project-link">Ver detalhes técnicos</a>
           </article>
 
           <article class="project-card" data-reveal>
             <div class="project-top">
+              <span class="project-type">Integration Layer</span>
+
               <p class="project-title">Hub de Integrações ERP</p>
-              <p class="project-desc">Camada de integração entre e-commerce e ERP com sincronização incremental e tratamento de erros.</p>
+
+              <p class="project-desc">
+                Camada de integração entre e-commerce e ERP com sincronização
+                incremental, cache Redis e filas para processamento resiliente
+                de grandes volumes de dados.
+              </p>
             </div>
+
             <div class="project-tags">
               <span>NestJS</span>
               <span>Redis</span>
-              <span>APIs</span>
+              <span>REST API</span>
+              <span>Workers</span>
+              <span>Sync Jobs</span>
             </div>
-            <a href="#" class="project-link">Ver case</a>
+
+            <a href="#" class="project-link">Ver detalhes técnicos</a>
           </article>
 
           <article class="project-card" data-reveal>
             <div class="project-top">
+              <span class="project-type">Process Automation</span>
+
               <p class="project-title">Plataforma de Automação Interna</p>
-              <p class="project-desc">Sistema para automatizar rotinas operacionais, geração de relatórios e notificações multicanal.</p>
+
+              <p class="project-desc">
+                Sistema para automatizar rotinas operacionais com execução
+                agendada, geração de relatórios e notificações automáticas para
+                múltiplos canais.
+              </p>
             </div>
+
             <div class="project-tags">
               <span>TypeScript</span>
               <span>Cron Jobs</span>
-              <span>Observability</span>
+              <span>Automation</span>
+              <span>Monitoring</span>
+              <span>Logs</span>
             </div>
-            <a href="#" class="project-link">Ver case</a>
+
+            <a href="#" class="project-link">Ver detalhes técnicos</a>
           </article>
         </div>
       </section>
@@ -264,26 +421,50 @@ async function processQueue(job) {
           <p class="section-label">Contato</p>
           <h2 class="section-title">Vamos automatizar seu processo</h2>
           <p class="mt-5 max-w-2xl text-slate-300">
-            Se você precisa integrar sistemas, eliminar tarefas manuais e escalar operações com segurança, eu posso ajudar com backend sólido e automações bem estruturadas.
+            Se você precisa integrar sistemas, eliminar tarefas manuais e
+            escalar operações com segurança, eu posso ajudar com backend sólido
+            e automações bem estruturadas.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
-            <a href="mailto:contato@jeysiell.dev" class="rounded-2xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-400">contato@jeysiell.dev</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5">GitHub</a>
+            <a
+              href="mailto:contatojeysiell@gmail.com"
+              class="rounded-2xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-400"
+              >contatojeysiell@gmail.com</a
+            >
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-brand-300 hover:bg-white/5"
+              >GitHub</a
+            >
           </div>
         </article>
       </section>
     </main>
 
-    <footer class="mx-auto max-w-6xl px-6 pb-10 pt-4 text-sm text-slate-400 lg:px-8">
-      <div class="flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p>&copy; <span id="current-year"></span> Jeysiell Lima. Todos os direitos reservados.</p>
-        <p>Desenvolvido com Tailwind CSS e atenção aos detalhes.</p>
+    <footer
+      class="mx-auto max-w-6xl px-6 pb-10 pt-4 text-sm text-slate-400 lg:px-8"
+    >
+      <div
+        class="flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p>
+          &copy; <span id="current-year"></span> Jeysiell Lima. Todos os
+          direitos reservados.
+        </p>
+        <p></p>
       </div>
     </footer>
 
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
-
